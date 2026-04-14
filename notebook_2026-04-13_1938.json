@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "savedAt": "2026-04-13T19:38:58.337Z",
+  "cells": [
+    {
+      "id": "cell-1",
+      "code": "plot(mtcars$mpg, mtcars$hp, col='blue', pch=19, main='Prueba de Gráfico Base')\n\nlibrary(ggplot2)\nggplot(mtcars, aes(mpg, hp)) + geom_point()"
+    }
+  ]
+}
