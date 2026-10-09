@@ -1,5 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, Series} from 'remotion';
+import {AbsoluteFill, Html5Audio, Sequence, Series, staticFile} from 'remotion';
+import {ENTRADA_VOZ, NARRACION} from './narracion';
 import {BiodieselProps} from './schema';
 import {FPS, GUION, tema} from './tema';
 import {Calculos} from './escenas/Calculos';
@@ -34,11 +35,20 @@ const ESCENAS: {clave: keyof typeof GUION; nombre: string; C: React.FC<Biodiesel
 export const BiodieselVideo: React.FC<BiodieselProps> = (props) => (
 	<AbsoluteFill style={{backgroundColor: tema.fondo}}>
 		<Series>
-			{ESCENAS.map(({clave, nombre, C}) => (
-				<Series.Sequence key={clave} name={nombre} durationInFrames={GUION[clave] * FPS}>
-					<C {...props} />
-				</Series.Sequence>
-			))}
+			{ESCENAS.map(({clave, nombre, C}, i) => {
+				const seg = props.tiempos?.duraciones[i] ?? GUION[clave];
+				const pista = NARRACION.find((n) => n.clave === clave);
+				return (
+					<Series.Sequence key={clave} name={nombre} durationInFrames={Math.round(seg * FPS)}>
+						<C {...props} />
+						{props.tiempos?.audio[i] && pista ? (
+							<Sequence from={Math.round(ENTRADA_VOZ * FPS)} name={`Voz: ${pista.archivo}`}>
+								<Html5Audio src={staticFile(`narracion/${pista.archivo}`)} />
+							</Sequence>
+						) : null}
+					</Series.Sequence>
+				);
+			})}
 		</Series>
 	</AbsoluteFill>
 );

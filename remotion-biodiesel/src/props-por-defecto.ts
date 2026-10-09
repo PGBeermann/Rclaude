@@ -13,6 +13,7 @@ export const propsPorDefecto: BiodieselProps = {
 		catalizadorPct: 1.0,
 		aglPct: 0.5,
 	},
+	narracion: true,
 	condiciones: {temperaturaBano: 62, tiempoReflujoMin: 60, tiempoDecantacionMin: 60},
 	resultados: {masaBiodiesel: 35.6, densidad: 0.881, viscosidad: 4.5, ilustrativos: true},
 };

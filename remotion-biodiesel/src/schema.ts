@@ -18,6 +18,12 @@ export const biodieselSchema = z.object({
 		tiempoReflujoMin: z.number().positive(),
 		tiempoDecantacionMin: z.number().positive(),
 	}),
+	/** Incluir la narración (pistas en public/narracion/). */
+	narracion: z.boolean(),
+	/** Calculado por calculateMetadata: duración (s) de cada escena y si su pista de audio existe. No editar. */
+	tiempos: z
+		.object({duraciones: z.array(z.number()), audio: z.array(z.boolean())})
+		.optional(),
 	/** Mediciones del grupo. Los valores por defecto son ILUSTRATIVOS. */
 	resultados: z.object({
 		masaBiodiesel: z.number().positive().describe('g obtenidos tras lavado y secado'),

@@ -39,6 +39,17 @@ Con los datos por defecto: 40 g de aceite, M̄ = 875 g/mol, relación molar MeOH
 La mezcla (≈ 55 mL) ocupa ≈ 55 % del balón de 100 mL, por debajo del límite habitual de 2/3.
 El rendimiento, la densidad y la viscosidad que se muestran son **valores ilustrativos** (`resultados.ilustrativos: true`): sustitúyalos por las mediciones del grupo.
 
+## Narración (ElevenLabs)
+
+El guion hablado está en `src/narracion.ts`. Hay una pista por escena, con los números escritos en palabras para que la voz los lea bien.
+Se generó con la voz **David** (español latinoamericano, uso educativo) y el modelo `eleven_v4`.
+
+1. Descargue las 12 pistas del flujo de ElevenLabs y guárdelas en `public/narracion/` con los nombres indicados en `public/narracion/LEEME.md`.
+2. `npm run render`. `calculateMetadata` (`src/tiempos.ts`) mide cada pista y alarga su escena: duración = máx(guion, 0.6 s + voz + 1 s). La voz entra 0.6 s después de iniciar cada escena.
+3. Si falta una pista, la escena se renderiza sin voz. Para un video mudo, use `"narracion": false` en las props.
+
+Si cambia la receta, vuelva a generar la pista `05-calculos.mp3`, porque menciona cifras concretas.
+
 ## Uso
 
 ```bash

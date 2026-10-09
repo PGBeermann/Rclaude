@@ -5,6 +5,7 @@ import {propsPorDefecto} from './props-por-defecto';
 import {biodieselSchema} from './schema';
 import {FPS, duracionTotal} from './tema';
 import {ReflujoEscena} from './escenas/Reflujo';
+import {calcularTiempos} from './tiempos';
 import {GUION} from './tema';
 
 export const RemotionRoot: React.FC = () => (
@@ -18,6 +19,7 @@ export const RemotionRoot: React.FC = () => (
 			durationInFrames={duracionTotal()}
 			schema={biodieselSchema}
 			defaultProps={propsPorDefecto}
+			calculateMetadata={({props}) => calcularTiempos(props)}
 		/>
 		{/* Clip corto solo del reflujo: útil para proyectar en bucle en clase. */}
 		<Composition
