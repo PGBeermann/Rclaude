@@ -1,0 +1,44 @@
+[
+	{
+		"id": "acido-acetico-fenolftaleina",
+		"props": {
+			"institucion": "Departamento de Química",
+			"curso": "Química Analítica I · Volumetría ácido-base",
+			"titulo": "Titulación de ácido acético con NaOH",
+			"autor": "Material didáctico generado con Remotion",
+			"acido": {"nombre": "Ácido acético", "formula": "CH3COOH", "concentracion": 0.1, "volumen": 25, "ka": 1.75e-5},
+			"base": {"nombre": "Hidróxido de sodio", "formula": "NaOH", "concentracion": 0.1},
+			"ecuacionNeta": "CH3COOH(ac) + OH^-(ac) → CH3COO^-(ac) + H2O(l)",
+			"indicador": "fenolftaleina",
+			"duracionTitulacionSeg": 14
+		}
+	},
+	{
+		"id": "acido-acetico-rojo-de-metilo",
+		"props": {
+			"institucion": "Departamento de Química",
+			"curso": "Química Analítica I · Volumetría ácido-base",
+			"titulo": "¿Qué pasa si elegimos mal el indicador?",
+			"autor": "Material didáctico generado con Remotion",
+			"acido": {"nombre": "Ácido acético", "formula": "CH3COOH", "concentracion": 0.1, "volumen": 25, "ka": 1.75e-5},
+			"base": {"nombre": "Hidróxido de sodio", "formula": "NaOH", "concentracion": 0.1},
+			"ecuacionNeta": "CH3COOH(ac) + OH^-(ac) → CH3COO^-(ac) + H2O(l)",
+			"indicador": "rojoDeMetilo",
+			"duracionTitulacionSeg": 14
+		}
+	},
+	{
+		"id": "acido-clorhidrico-bromotimol",
+		"props": {
+			"institucion": "Departamento de Química",
+			"curso": "Química Analítica I · Volumetría ácido-base",
+			"titulo": "Titulación de HCl con NaOH",
+			"autor": "Material didáctico generado con Remotion",
+			"acido": {"nombre": "Ácido clorhídrico", "formula": "HCl", "concentracion": 0.1, "volumen": 25, "ka": null},
+			"base": {"nombre": "Hidróxido de sodio", "formula": "NaOH", "concentracion": 0.1},
+			"ecuacionNeta": "H3O^+(ac) + OH^-(ac) → 2H2O(l)",
+			"indicador": "azulDeBromotimol",
+			"duracionTitulacionSeg": 12
+		}
+	}
+]
