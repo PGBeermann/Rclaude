@@ -1,0 +1,1 @@
+En este tutorial analizaremos un diseño factorial de dos factores con réplicas, el modelo que lo sustenta y las decisiones que suelen pasarse por alto al aplicarlo a datos experimentales de química.

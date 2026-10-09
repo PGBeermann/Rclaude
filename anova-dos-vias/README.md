@@ -51,6 +51,28 @@ Las fuentes (Inter y JetBrains Mono) se incluyen mediante `@fontsource`, de modo
 Internet. En un VPS sin Chrome, Remotion descarga Chrome Headless Shell la primera vez; también puede indicarse un
 Chromium local con `--browser-executable=/ruta/a/chrome`.
 
+## Narración con ElevenLabs
+
+El texto que se envía a síntesis de voz está en `narracion/escena-XX.txt`. Es el guion de `GUION.md` reescrito
+tal como debe leerse: los símbolos aparecen en palabras («cuadrado medio del error», «grados Celsius», «p menor que
+cero punto cero cero uno») y se omiten las citas entre paréntesis.
+
+```bash
+export ELEVENLABS_API_KEY="sk_..."      # clave de su cuenta de ElevenLabs
+npm run voz                             # genera public/voz/escena-XX.mp3 y src/data/voz.json
+npm run render                          # el video ya incluye la narración
+```
+
+- **Voz por defecto:** «David – Clear, Warm and Patient» (español latinoamericano, `dQ0C8BEdKF2odmELvNee`), con el
+  modelo `eleven_multilingual_v2`. Se cambian con las variables `ELEVENLABS_VOICE_ID` y `ELEVENLABS_MODEL_ID`.
+- **Duración automática:** cada escena dura lo que indique `src/Video.tsx` o lo que necesite su narración
+  (0.6 s de entrada + clip + 1.2 s de pausa), lo que sea mayor.
+- **Regenerar un clip:** `python3 narracion/generar_voz.py --solo 06`. Para regenerar todos, use `--forzar`.
+- **Clips propios:** si genera o graba los audios por otro medio (por ejemplo, desde la web de ElevenLabs),
+  guárdelos como `public/voz/escena-00.mp3` … `escena-14.mp3` y ejecute `npm run voz` sin clave; el script solo
+  mide las duraciones.
+- Si `src/data/voz.json` está vacío (`{}`), el video se renderiza sin voz.
+
 ## Verificación cruzada en R
 
 `analisis/anova_biodiesel.R` reproduce la tabla ANOVA (SC tipo I/II/III con `car`), los supuestos y los efectos

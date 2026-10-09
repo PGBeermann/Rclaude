@@ -1,6 +1,8 @@
 import { fade } from "@remotion/transitions/fade";
 import { linearTiming, TransitionSeries } from "@remotion/transitions";
 import React from "react";
+import { Html5Audio, Sequence, staticFile } from "remotion";
+import voz from "./data/voz.json";
 import { FPS } from "./theme";
 import { Portada } from "./scenes/Portada";
 import { S01Caso } from "./scenes/S01Caso";
@@ -39,15 +41,34 @@ export const ESCENAS: { C: React.FC; s: number }[] = [
 
 export const TRANSICION = 15; // fotogramas
 
+/** La narración entra tras el fundido y deja una pausa al final de la escena */
+const ENTRADA_VOZ = 0.6; // s
+const COLA_VOZ = 1.2; // s
+
+const clave = (i: number) => String(i).padStart(2, "0");
+const durVoz = (i: number): number | undefined => (voz as Record<string, number>)[clave(i)];
+
+/** Duración (fotogramas) de la escena i: la base, o la necesaria para que quepa su narración */
+export const framesEscena = (i: number) => {
+  const d = durVoz(i);
+  const s = d === undefined ? ESCENAS[i].s : Math.max(ESCENAS[i].s, ENTRADA_VOZ + d + COLA_VOZ);
+  return Math.ceil(s * FPS);
+};
+
 export const DURACION_TOTAL =
-  ESCENAS.reduce((acc, e) => acc + e.s * FPS, 0) - TRANSICION * (ESCENAS.length - 1);
+  ESCENAS.reduce((acc, _, i) => acc + framesEscena(i), 0) - TRANSICION * (ESCENAS.length - 1);
 
 export const AnovaDosVias: React.FC = () => (
   <TransitionSeries>
-    {ESCENAS.map(({ C, s }, i) => (
+    {ESCENAS.map(({ C }, i) => (
       <React.Fragment key={i}>
-        <TransitionSeries.Sequence durationInFrames={s * FPS}>
+        <TransitionSeries.Sequence durationInFrames={framesEscena(i)}>
           <C />
+          {durVoz(i) !== undefined ? (
+            <Sequence from={Math.round(ENTRADA_VOZ * FPS)} layout="none">
+              <Html5Audio src={staticFile(`voz/escena-${clave(i)}.mp3`)} />
+            </Sequence>
+          ) : null}
         </TransitionSeries.Sequence>
         {i < ESCENAS.length - 1 ? (
           <TransitionSeries.Transition presentation={fade()} timing={linearTiming({ durationInFrames: TRANSICION })} />

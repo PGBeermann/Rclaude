@@ -1,7 +1,8 @@
 # Guion de narración — ANOVA de dos vías en investigación química
 
 Duración: ≈ 4 min 56 s (1920×1080, 30 fps). Cada bloque corresponde a una escena de `src/Video.tsx`; si la locución
-se alarga, ajuste la duración `s` de esa escena en el arreglo `ESCENAS`.
+se alarga, ajuste la duración `s` de esa escena en el arreglo `ESCENAS`. La versión normalizada para síntesis
+de voz (ElevenLabs) está en `narracion/escena-XX.txt`; con narración, cada escena se alarga sola para que quepa.
 
 ---
 

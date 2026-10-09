@@ -1,0 +1,1 @@
+Las referencias, junto con los scripts en Python y en R, permiten reproducir todos los valores que aparecen en este video.

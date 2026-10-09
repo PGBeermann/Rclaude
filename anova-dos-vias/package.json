@@ -8,6 +8,7 @@
     "render": "remotion render AnovaDosVias out/anova-dos-vias.mp4",
     "still": "remotion still AnovaDosVias out/portada.png --frame=60",
     "analisis": "python3 analisis/anova_biodiesel.py",
+    "voz": "python3 narracion/generar_voz.py",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

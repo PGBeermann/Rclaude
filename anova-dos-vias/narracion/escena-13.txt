@@ -1,0 +1,1 @@
+Un reporte completo especifica el tipo de modelo, el denominador de cada F, el tamaño del efecto, el método de comparaciones múltiples, el diagnóstico de residuales, y el software utilizado.
