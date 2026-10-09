@@ -1,0 +1,602 @@
+{
+  "factores": {
+    "A": [
+      "KOH",
+      "NaOH",
+      "CH3ONa"
+    ],
+    "B": [
+      50,
+      60,
+      70
+    ],
+    "n": 3,
+    "N": 27
+  },
+  "datos": [
+    {
+      "catalizador": "KOH",
+      "temperatura": 50,
+      "replica": 1,
+      "rendimiento": 89.7,
+      "orden_corrida": 19
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 50,
+      "replica": 2,
+      "rendimiento": 89.1,
+      "orden_corrida": 8
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 50,
+      "replica": 3,
+      "rendimiento": 89.5,
+      "orden_corrida": 17
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 60,
+      "replica": 1,
+      "rendimiento": 94.1,
+      "orden_corrida": 23
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 60,
+      "replica": 2,
+      "rendimiento": 91.8,
+      "orden_corrida": 12
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 60,
+      "replica": 3,
+      "rendimiento": 92.5,
+      "orden_corrida": 26
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 70,
+      "replica": 1,
+      "rendimiento": 94.5,
+      "orden_corrida": 16
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 70,
+      "replica": 2,
+      "rendimiento": 93.4,
+      "orden_corrida": 27
+    },
+    {
+      "catalizador": "KOH",
+      "temperatura": 70,
+      "replica": 3,
+      "rendimiento": 93.9,
+      "orden_corrida": 3
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 50,
+      "replica": 1,
+      "rendimiento": 84.4,
+      "orden_corrida": 11
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 50,
+      "replica": 2,
+      "rendimiento": 84.5,
+      "orden_corrida": 15
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 50,
+      "replica": 3,
+      "rendimiento": 86.3,
+      "orden_corrida": 6
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 60,
+      "replica": 1,
+      "rendimiento": 90.9,
+      "orden_corrida": 24
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 60,
+      "replica": 2,
+      "rendimiento": 88.6,
+      "orden_corrida": 18
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 60,
+      "replica": 3,
+      "rendimiento": 90.8,
+      "orden_corrida": 1
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 70,
+      "replica": 1,
+      "rendimiento": 91.7,
+      "orden_corrida": 5
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 70,
+      "replica": 2,
+      "rendimiento": 92.8,
+      "orden_corrida": 10
+    },
+    {
+      "catalizador": "NaOH",
+      "temperatura": 70,
+      "replica": 3,
+      "rendimiento": 92.5,
+      "orden_corrida": 9
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 50,
+      "replica": 1,
+      "rendimiento": 90.0,
+      "orden_corrida": 20
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 50,
+      "replica": 2,
+      "rendimiento": 91.9,
+      "orden_corrida": 21
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 50,
+      "replica": 3,
+      "rendimiento": 90.1,
+      "orden_corrida": 22
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 60,
+      "replica": 1,
+      "rendimiento": 97.7,
+      "orden_corrida": 13
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 60,
+      "replica": 2,
+      "rendimiento": 97.3,
+      "orden_corrida": 14
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 60,
+      "replica": 3,
+      "rendimiento": 97.5,
+      "orden_corrida": 25
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 70,
+      "replica": 1,
+      "rendimiento": 93.2,
+      "orden_corrida": 7
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 70,
+      "replica": 2,
+      "rendimiento": 92.6,
+      "orden_corrida": 2
+    },
+    {
+      "catalizador": "CH3ONa",
+      "temperatura": 70,
+      "replica": 3,
+      "rendimiento": 94.6,
+      "orden_corrida": 4
+    }
+  ],
+  "media_global": 91.69999999999999,
+  "medias_A": {
+    "KOH": 92.05555555555556,
+    "NaOH": 89.16666666666667,
+    "CH3ONa": 93.8777777777778
+  },
+  "medias_B": {
+    "50": 88.3888888888889,
+    "60": 93.46666666666665,
+    "70": 93.24444444444445
+  },
+  "celdas": [
+    {
+      "cat": "CH3ONa",
+      "temp": 50,
+      "media": 90.66666666666667,
+      "de": 1.0692676621563684
+    },
+    {
+      "cat": "CH3ONa",
+      "temp": 60,
+      "media": 97.5,
+      "de": 0.20000000000000284
+    },
+    {
+      "cat": "CH3ONa",
+      "temp": 70,
+      "media": 93.46666666666665,
+      "de": 1.026320287889373
+    },
+    {
+      "cat": "KOH",
+      "temp": 50,
+      "media": 89.43333333333334,
+      "de": 0.3055050463303964
+    },
+    {
+      "cat": "KOH",
+      "temp": 60,
+      "media": 92.8,
+      "de": 1.1789826122551537
+    },
+    {
+      "cat": "KOH",
+      "temp": 70,
+      "media": 93.93333333333334,
+      "de": 0.5507570547286073
+    },
+    {
+      "cat": "NaOH",
+      "temp": 50,
+      "media": 85.06666666666666,
+      "de": 1.0692676621563613
+    },
+    {
+      "cat": "NaOH",
+      "temp": 60,
+      "media": 90.10000000000001,
+      "de": 1.3000000000000054
+    },
+    {
+      "cat": "NaOH",
+      "temp": 70,
+      "media": 92.33333333333333,
+      "de": 0.5686240703077304
+    }
+  ],
+  "anova": [
+    {
+      "fuente": "A",
+      "ss": 101.582222222223,
+      "gl": 2.0,
+      "ms": 50.7911111111115,
+      "F": 63.66573816156033,
+      "p": 6.858282630288418e-09,
+      "eta2p": 0.8761452064246567,
+      "omega2p": 0.8227549509024092,
+      "eta2": 0.3355427833197562
+    },
+    {
+      "fuente": "B",
+      "ss": 148.22888888888878,
+      "gl": 2.0,
+      "ms": 74.11444444444439,
+      "F": 92.901114206128,
+      "p": 3.27018401053802e-10,
+      "eta2p": 0.9116790815280529,
+      "omega2p": 0.8719178625227938,
+      "eta2": 0.48962439350230813
+    },
+    {
+      "fuente": "AB",
+      "ss": 38.568888888888544,
+      "gl": 4.0,
+      "ms": 9.642222222222136,
+      "F": 12.086350974930244,
+      "p": 6.019705656022336e-05,
+      "eta2p": 0.7286925854395816,
+      "omega2p": 0.6215593643852707,
+      "eta2": 0.1273993819412319
+    },
+    {
+      "fuente": "E",
+      "ss": 14.36000000000001,
+      "gl": 18.0,
+      "ms": 0.7977777777777784
+    },
+    {
+      "fuente": "T",
+      "ss": 302.74,
+      "gl": 26.0
+    }
+  ],
+  "tipos_ss_iguales_balanceado": true,
+  "supuestos": {
+    "shapiro_W": 0.9642404645077675,
+    "shapiro_p": 0.4590954764676426,
+    "brown_forsythe_F": 0.31126155878467576,
+    "brown_forsythe_p": 0.9516860008785379,
+    "qq": [
+      {
+        "teorico": -1.9965732639476046,
+        "observado": -2.056818269259036
+      },
+      {
+        "teorico": -1.5578616197798993,
+        "observado": -1.3712121795060306
+      },
+      {
+        "teorico": -1.3027487567170455,
+        "observado": -1.188383888905259
+      },
+      {
+        "teorico": -1.1121933050075685,
+        "observado": -0.914141453004053
+      },
+      {
+        "teorico": -0.9552534510301028,
+        "observado": -0.9141414530039944
+      },
+      {
+        "teorico": -0.8188990066977959,
+        "observado": -0.8684343803538161
+      },
+      {
+        "teorico": -0.6963038987191664,
+        "observado": -0.7770202350534597
+      },
+      {
+        "teorico": -0.5833866726700095,
+        "observado": -0.7770202350534012
+      },
+      {
+        "teorico": -0.477469937580378,
+        "observado": -0.7313131624032229
+      },
+      {
+        "teorico": -0.376665750640266,
+        "observado": -0.45707072650201674
+      },
+      {
+        "teorico": -0.27955815647316523,
+        "observado": -0.41136365385181894
+      },
+      {
+        "teorico": -0.18502298273472367,
+        "observado": -0.36565658120164063
+      },
+      {
+        "teorico": -0.0921164679031774,
+        "observado": -0.27424243590122566
+      },
+      {
+        "teorico": 0.0,
+        "observado": -0.04570707265021726
+      },
+      {
+        "teorico": 0.0921164679031774,
+        "observado": -1.9486097066675416e-14
+      },
+      {
+        "teorico": 0.18502298273472367,
+        "observado": 0.09141414530039553
+      },
+      {
+        "teorico": 0.27955815647316523,
+        "observado": 0.22853536325098886
+      },
+      {
+        "teorico": 0.376665750640266,
+        "observado": 0.2742424359011867
+      },
+      {
+        "teorico": 0.477469937580378,
+        "observado": 0.3656565812016016
+      },
+      {
+        "teorico": 0.5833866726700095,
+        "observado": 0.6398990171027883
+      },
+      {
+        "teorico": 0.6963038987191664,
+        "observado": 0.7770202350533816
+      },
+      {
+        "teorico": 0.8188990066977959,
+        "observado": 0.9598485256541922
+      },
+      {
+        "teorico": 0.9552534510301028,
+        "observado": 1.0969697436048051
+      },
+      {
+        "teorico": 1.1121933050075685,
+        "observado": 1.554040470106763
+      },
+      {
+        "teorico": 1.3027487567170455,
+        "observado": 1.6911616880573763
+      },
+      {
+        "teorico": 1.5578616197798993,
+        "observado": 1.691161688057415
+      },
+      {
+        "teorico": 1.9965732639476053,
+        "observado": 1.782575833357791
+      }
+    ],
+    "resid_vs_ajust": [
+      {
+        "ajustado": 89.43333333333334,
+        "residual": 0.2666666666666657
+      },
+      {
+        "ajustado": 89.43333333333334,
+        "residual": -0.3333333333333428
+      },
+      {
+        "ajustado": 89.43333333333334,
+        "residual": 0.06666666666666288
+      },
+      {
+        "ajustado": 92.80000000000001,
+        "residual": 1.299999999999983
+      },
+      {
+        "ajustado": 92.80000000000001,
+        "residual": -1.0000000000000142
+      },
+      {
+        "ajustado": 92.80000000000001,
+        "residual": -0.30000000000001137
+      },
+      {
+        "ajustado": 93.93333333333335,
+        "residual": 0.5666666666666487
+      },
+      {
+        "ajustado": 93.93333333333335,
+        "residual": -0.5333333333333456
+      },
+      {
+        "ajustado": 93.93333333333335,
+        "residual": -0.03333333333334565
+      },
+      {
+        "ajustado": 85.06666666666666,
+        "residual": -0.6666666666666572
+      },
+      {
+        "ajustado": 85.06666666666666,
+        "residual": -0.5666666666666629
+      },
+      {
+        "ajustado": 85.06666666666666,
+        "residual": 1.2333333333333343
+      },
+      {
+        "ajustado": 90.10000000000001,
+        "residual": 0.7999999999999972
+      },
+      {
+        "ajustado": 90.10000000000001,
+        "residual": -1.5000000000000142
+      },
+      {
+        "ajustado": 90.10000000000001,
+        "residual": 0.6999999999999886
+      },
+      {
+        "ajustado": 92.33333333333334,
+        "residual": -0.63333333333334
+      },
+      {
+        "ajustado": 92.33333333333334,
+        "residual": 0.46666666666665435
+      },
+      {
+        "ajustado": 92.33333333333334,
+        "residual": 0.1666666666666572
+      },
+      {
+        "ajustado": 90.6666666666667,
+        "residual": -0.6666666666666998
+      },
+      {
+        "ajustado": 90.6666666666667,
+        "residual": 1.2333333333333059
+      },
+      {
+        "ajustado": 90.6666666666667,
+        "residual": -0.5666666666667055
+      },
+      {
+        "ajustado": 97.50000000000001,
+        "residual": 0.19999999999998863
+      },
+      {
+        "ajustado": 97.50000000000001,
+        "residual": -0.20000000000001705
+      },
+      {
+        "ajustado": 97.50000000000001,
+        "residual": -1.4210854715202004e-14
+      },
+      {
+        "ajustado": 93.4666666666667,
+        "residual": -0.26666666666669414
+      },
+      {
+        "ajustado": 93.4666666666667,
+        "residual": -0.8666666666667027
+      },
+      {
+        "ajustado": 93.4666666666667,
+        "residual": 1.1333333333332973
+      }
+    ]
+  },
+  "efectos_simples_A_en_B": [
+    {
+      "temp": 50,
+      "ss": 51.948888888889044,
+      "gl": 2,
+      "F": 32.55849582172709,
+      "p": 1.0477175122644839e-06
+    },
+    {
+      "temp": 60,
+      "ss": 84.13999999999984,
+      "gl": 2,
+      "F": 52.73398328690794,
+      "p": 2.9748418649039463e-08
+    },
+    {
+      "temp": 70,
+      "ss": 4.062222222222247,
+      "gl": 2,
+      "F": 2.545961002785529,
+      "p": 0.10624580910171673
+    }
+  ],
+  "tukey_60C": {
+    "q_crit": 3.609303828706538,
+    "hsd": 1.8612460207000183,
+    "pares": [
+      {
+        "par": "KOH – NaOH",
+        "dif": 2.6999999999999886,
+        "p": 0.004418394220980115,
+        "signif": true
+      },
+      {
+        "par": "KOH – CH3ONa",
+        "dif": -4.700000000000003,
+        "p": 1.3154957059446915e-05,
+        "signif": true
+      },
+      {
+        "par": "NaOH – CH3ONa",
+        "dif": -7.3999999999999915,
+        "p": 2.07471659852132e-08,
+        "signif": true
+      }
+    ]
+  },
+  "potencia_prospectiva_AB": {
+    "f": 0.4,
+    "lambda": 4.320000000000001,
+    "potencia": 0.27159305095527514,
+    "n_por_celda_para_080": 9
+  },
+  "r2": 0.9525665587632952,
+  "r2_aj": 0.9314850293247597
+}

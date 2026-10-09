@@ -1,0 +1,28 @@
+{
+  "name": "anova-dos-vias-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tutorial en video (Remotion) sobre ANOVA de dos vías aplicado a investigación en química",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render AnovaDosVias out/anova-dos-vias.mp4",
+    "still": "remotion still AnovaDosVias out/portada.png --frame=60",
+    "analisis": "python3 analisis/anova_biodiesel.py",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.1.0",
+    "@fontsource/jetbrains-mono": "5.1.0",
+    "@remotion/cli": "4.0.525",
+    "@remotion/transitions": "4.0.525",
+    "katex": "0.16.11",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.525"
+  },
+  "devDependencies": {
+    "@types/katex": "0.16.7",
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
